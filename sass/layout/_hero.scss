@@ -1,0 +1,118 @@
+.hero {
+  background-color: $background-dark;
+  color: $color-white;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-bottom: 60px;
+  max-width: 1600px;
+  max-height: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/mob/hero/hero-480.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mob/hero/hero-480@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/hero/hero-768.jpg");
+  }
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/tablet/hero/hero-768@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/hero/hero-1200.jpg");
+  }
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/desktop/hero/hero-1200@2x.jpg");
+    }
+  }
+}
+
+.hero-title {
+  font-weight: 900;
+  margin: 0 auto 30px;
+  max-width: 360px;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+  }
+}
+
+.hero-button {
+  color: $color-white;
+  background-color: $active-color;
+  display: inline-block;
+  align-items: center;
+  margin: auto 0;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}

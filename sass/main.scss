@@ -1,0 +1,18 @@
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./base/base";
+@import "./base/container";
+
+@import "./utils/placeholders";
+@import "./utils/mixin";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/about-us";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/modal-window";
+
+@import "./layout/portfolio";
